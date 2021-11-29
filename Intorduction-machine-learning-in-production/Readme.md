@@ -2,7 +2,7 @@
 attachments: [Clipboard_2021-11-29-15-33-02.png, Data.jpg, datapipeline.jpg, diligence_value.jpg, diligence.jpg, history.jpg, Problems.jpg, scoping.jpg, userID.jpg]
 title: Introduction to machine learning in production
 created: '2021-11-28T15:12:42.089Z'
-modified: '2021-11-29T14:39:28.421Z'
+modified: '2021-11-29T15:20:46.076Z'
 ---
 
 # Introduction to machine learning in production
@@ -10,7 +10,7 @@ modified: '2021-11-29T14:39:28.421Z'
 ## Define Data and Establish Baseline
 How do you get data for trining and model success?
 + It is difficult to define the labels, they should be consistent. It can ambiguous
-![Iamge](@attachment/Data.jpg)
+![Iamge](./attachments/Data.jpg)
 
 + Define Data
 + Label and organize the Data
@@ -19,7 +19,7 @@ How do you get data for trining and model success?
 The rounding boxes in a detection problem can be ambiguous. 
 
 ### User Id merge example
-![Iamge](@attachment/userID.jpg)
+![Iamge](./attachments/userID.jpg)
 Build a model that output 0 if the records belong to the same person or 1 if not. Another possible problem is: recognize if the information belong to a bot/spam account or a legit person ?
 Is it a fraudolent transaction ?
 In these cases the labeling can be ambiguous.
@@ -28,7 +28,7 @@ Definbe: What is the input x?
  + What feature need to be included? (even a rough gps location can be useful to understand if the account belong to the same person).
 
 ## Major type of data problems
-![Iamge](@attachment/Problems.jpg)
+![Iamge](./attachments/Problems.jpg)
 ### Unstrctured data
 + May or may not have a huge collection of unlabeled examples x
 + Humans can label more data
@@ -76,7 +76,7 @@ Excpetion if you already know you need a big database.
 # Meta-data, data provenance and lineage
 Data pipeline:
 
-![Iamge](@attachment/datapipeline.jpg)
+![Iamge](./attachments/datapipeline.jpg)
 Then you discover errors in the spam dataset (ip addresses). It will change the systems in your pipelinem that are often made by different people/departament -> keep track of data provenance and lineage (where it comes from and sequence steps).
 
 ## Meta-data
@@ -92,7 +92,7 @@ No need to worries about this for large data-set
 # Scoping
 
 ## What is Scoping
-![Iamge](@attachment/scoping.jpg)
+![Iamge](./attachments/scoping.jpg)
 ## Scoping process
 + Brainstorm business problems (not AI problems)
 + Brainstorm AI solutions
@@ -107,7 +107,7 @@ But even then I find it worthwhile to first engage in divergent thinking where y
 
 I would give a human too same data as would be fed to a learning algorithm and just ask, can a human given the same data, perform the tasks such as can the human given a picture of a scratch smartphone, perform the task of detecting scratches reliably? If a human can do it, then that significantly increases the hope they can also get the learning algorithm to do it.
 
- ![Iamge](@attachment/diligence.jpg)
+ ![Iamge](./attachments/diligence.jpg)
 
 (Human eyes has more contrast than cameras)
 Do we have features that ar predicitive ?
@@ -117,10 +117,10 @@ Do we have features that ar predicitive ?
 + Given social media chatter, predict demand for clothing style
 + Given history of stock's price, predict future price of that stock (it seems not technically feasable (Andrew opinion's))
 
-![Iamge](@attachment/history.jpg)
+![Iamge](./attachments/history.jpg)
 
 ## Diligence on value
-![](@attachment/diligence_value.jpg)
+![Image](./attachments/diligence_value.jpg)
 
 ## Milestones and resourcing
 + ML metrics (accuracy, precision, recall etc)
